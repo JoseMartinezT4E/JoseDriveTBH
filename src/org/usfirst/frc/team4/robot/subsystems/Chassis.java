@@ -42,6 +42,10 @@ public class Chassis extends Subsystem {
     	drive.arcadeDrive(left, right);
     }
     
+    public void autonDrive(){
+    	tankDrive(.75,.75);
+    }
+    
     public void toggleDrive(){
     	isTankDrive = !isTankDrive;
     }
